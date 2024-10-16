@@ -1,6 +1,6 @@
-import { ProductImage } from 'components/image/product-image'
 import { ProductProvider } from 'components/product/product-context'
 import { ProductDescription } from 'components/product/product-description'
+import { ProductImage } from 'components/product/product-image'
 import { Product } from 'lib/shopify/types'
 import { Suspense } from 'react'
 
