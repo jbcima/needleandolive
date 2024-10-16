@@ -1,6 +1,5 @@
 import { CartProvider } from 'components/cart/cart-context';
 import { Navbar } from 'components/layout/navbar';
-import { WelcomeToast } from 'components/welcome-toast';
 import { getCart } from 'lib/shopify';
 import { ensureStartsWith } from 'lib/utils';
 import { cookies } from 'next/headers';
@@ -48,7 +47,6 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
           <main>
             {children}
             <Toaster closeButton />
-            <WelcomeToast />
           </main>
         </CartProvider>
       </body>
