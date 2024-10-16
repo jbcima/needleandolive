@@ -1,4 +1,5 @@
 import Grid from 'components/grid';
+import Search from 'components/layout/navbar/search';
 import ProductGridItems from 'components/layout/product-grid-items';
 import { defaultSort, sorting } from 'lib/constants';
 import { getProducts } from 'lib/shopify';
@@ -21,6 +22,9 @@ export default async function SearchPage({
 
   return (
     <>
+      <div className="mb-8">
+        <Search />
+      </div>
       {searchValue ? (
         <p className="mb-4">
           {products.length === 0
